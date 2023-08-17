@@ -259,14 +259,14 @@ section{
     align-items: center;
     border-radius: 20px;
     height: 600px;
-    width: 490px;
+    /* width: 490px; */
     margin: 30px;
 }
 
 
 
 .box > h3{
-    text-align: left;
+    text-align: center;
     color: #7f00ff;
     font-size: 20px;
     letter-spacing: 1px;
@@ -449,6 +449,9 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 800px;
+    height: 150px;
+    margin: auto;
 }
 
 .desc > p{
@@ -483,6 +486,5 @@ section{
 .barra2{
     background-color: #7f00ff;
     width: 2px;
-    height: 150px;
-    margin: 0 5px;
+    height: 200px;
 }
