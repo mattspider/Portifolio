@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a70378f15a.js" crossorigin="anonymous"></script>
     <title>Matheus de Oliveira Soares || Portifólio</title>
 </head>
 <body class="animated-gradient">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    
     <div class="container">
 
         <nav class="nav-bar">
 
-
-        
                 <a href="#projetos" class="tab" id="">Projetos</a>
-                <a href="#" class="tab" id="">Formação</a></li>
-                <a href="#" class="tab" id="">Skills</a></li>
-                <a href="#" class="tab" id="">Sobre mim</a>
+                <a href="#skills" class="tab" id="">Skills</a></li>
+                <a href="#formacao" class="tab" id="">Formação</a></li>
+                <a href="#aboutme" class="tab" id="">Sobre mim</a>
            
 
             <div class="links">
@@ -56,7 +54,7 @@
     <script>var typingEffect = new Typed(".multiText",{
         strings : ["Matheus de Oliveira"],
         loop : true,
-        typeSpeed : 500,
+        typeSpeed : 250,
         backSpeed : 120,
         backDelay : 1500}) 
     </script>
@@ -111,82 +109,182 @@
             </div>
     </section>
 
-    <section class="skills">
+    <section class="skills section" id="skills">
         <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
         <span class="topSkill">Nesta Seção você verá minhas</span>
         <h2 class="sk"><span class="skill">Habilidades</span></h2>
-        <div class="hardSkills">
-            
-            <div class="Habilities">
-                <div class="cont_skill">
-                    <a onclick="mostraResposta('python')"><i class="fa-brands fa-python"></i></a>
-                </div>
 
-                <div class="cont_skill">
-                    <a onclick="mostraResposta('php')"><i class="fa-brands fa-php"></i></a>
-                </div>
+        <div class="skills_container container grid">
 
-                
-                <div class="cont_skill">
-                    <a onclick="mostraResposta('html')"><i class="fa-brands fa-html5"></i></a>
-                </div>
+            <div class="skills_content skills_open">
+                    
+                <div class="skills_header">
+                    <i class="fa-regular fa-clone skill_icon"></i>
+                    <div>
+                        <h1 class="skills_title">Front-End</h1>
+                        <span class="skills_subtitle"></span>
+                    </div>
+                    <i class="fa-solid fa-angle-down skill_arrow";></i>
+                </div> 
 
-                
-                <div class="cont_skill">
-                    <a onclick="mostraResposta('css')"><i class="fa-brands fa-css3-alt"></i></a>
-                </div>
+                <div class="skills_list grid">
 
-            
-                <div class="cont_skill">
-                    <a onclick="mostraResposta('js')"><i class="fa-brands fa-js"></i></a>
-                </div>
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">HTML</h3>
+                            <span class="skills_number">50%</span>
+                        </div>
+                        <div class="skills_bar">
+                            <span class="skills_percentage skills_html"></span>
+                        </div>
+                    </div>
+    
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">CSS</h3>
+                            <span class="skills_number">50%</span>
+                        </div>
+                        <div class="skills_bar">
+                            <span class="skills_percentage skills_css"></span>
+                        </div>
+                    </div>
+    
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">JavaScript</h3>
+                            <span class="skills_number">30%</span>
+                        </div>
+                        <div class="skills_bar">
+                            <span class="skills_percentage skills_javascript"></span>
+                        </div>
+                    </div>
 
-
-                <div class="cont_skill">
-                    <a onclick="mostraResposta('java')"><i class="fa-brands fa-java"></i></a>
                 </div>
 
             </div>
-            <div class="barra">
+
+            <div class="skills_content skills_close">
+
+                <div class="skills_header">
+                    <i class="fa-solid fa-server skill_icon"></i>
+                    <div>
+                        <h1 class="skills_title">Back-End</h1>
+                        <span class="skills_subtitle"></span>
+                    </div>
+                    <i class="fa-solid fa-angle-down skill_arrow";></i>
+                </div>         
+
+                <div class="skills_list grid">
+
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">Python</h3>
+                            <span class="skills_number">60%</span>
+                        </div>
+                        <div class="skills_bar">
+                            <div class="skills_percentage skills_python"></div>
+                        </div>
+                    </div>
+
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">Django</h3>
+                            <span class="skills_number">50%</span>
+                        </div>
+                        <div class="skills_bar">
+                            <div class="skills_percentage skills_django"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">PHP</h3>
+                            <span class="skills_number">20%</span>
+                        </div>
+                        <div class="skills_bar">
+                            <div class="skills_percentage skills_php"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">Java</h3>
+                            <span class="skills_number">20%</span>
+                        </div>
+                        <div class="skills_bar">
+                            <div class="skills_percentage skills_java"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">Node</h3>
+                            <span class="skills_number">20%</span>
+                        </div>
+                        <div class="skills_bar">
+                            <div class="skills_percentage skills_node"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">TypeScript</h3>
+                            <span class="skills_number">30%</span>
+                        </div>
+                        <div class="skills_bar">
+                            <div class="skills_percentage skills_typescript"></div>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
-            <div id="respostas">
-                <div id="python" class="faq">
-                    <p>
-                        Trabalho com Python desde 2021, meus conhecimentos vão
-                    de lógica básica de programação até criação de API's e uso do framawork Django.
-                    </p>
+
+            <div class="skills_content skills_close">
+                    
+                <div class="skills_header">
+                    <i class="fa-solid fa-vials skill_icon"></i>
+                    <div>
+                        <h1 class="skills_title">QA-Tester</h1>
+                        <span class="skills_subtitle"></span>
+                    </div>
+                    <i class="fa-solid fa-angle-down skill_arrow";></i>
                 </div>
-                <div id="php" class="faq">
-                    <p>
-                        Conheci o PHP recentemente , meus conhecimentos vão de 
-                    lógica básica de programação até criação de API's.
-                    </p>
+
+                <div class="skills_list grid">
+
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">Black-box</h3>
+                            <span class="skills_number">80%</span>
+                        </div>
+                        <div class="skills_bar">
+                            <div class="skills_percentage skills_blackbox"></div>
+                            </div>
+                    </div>
+    
+    
+                    <div class="skills_data">
+                        <div class="skills_titles">
+                            <h3 class="skills_name">E2E</h3>
+                            <span class="skills_number">50%</span>
+                        </div>
+                        <div class="skills_bar">
+                            <div class="skills_percentage skills_e2e"></div>
+                        </div>
+                    </div>
+
                 </div>
-                <div id="html" class="faq">
-                    <p>
-                        Meus conhecimentos em Html são básicos/intermediários, o básico
-                    para desenvolver projetos
-                    </p>
-                </div>
-                <div id="css" class="faq">
-                    <p>
-                    Meus conhecimentos em Css são intermediários, são fazer projetos
-                    responsivos, entretanto não tenho muita afinidade com design
-                    </p>
-                </div>
-                <div id="js" class="faq">
-                    <p>Meus conhecimentos em JavaScript vão até criação de API's e Node</p>
-                </div>
-                <div id="java" class="faq"><p>
-                    Comecei a estudar Java recentemente na faculdade, portanto, sou um iniciante na linguagem,
-                    meus conhecimentos se limitam a POO
-                </p>
+               
             </div>
+
         </div>
+ 
     </section>
 
-    <section class="formation">
+    <script src="assets/main.js"></script>
+    
+    <section class="formation" id="formacao">
 
         <h2 class="top">Minhas</h2>
         <h1 class="fm"><span class="form">Formações</span></h1>
@@ -196,30 +294,114 @@
                 <a onclick="mostraDescricao('jp')">
                     Jovem programador
                 </a>
+                
                 <a onclick="mostraDescricao('ads')" >ADS - Unisul</a>
             </div>
             
             <div class="barra2">
-
+                <div class="dentrodabarra"></div>
             </div>
 
             <div class="description">
                 <div class="desc" id="jp">
+                    <h3>2021 - 2022</h3>
                     <p>
-                        O programador jovem programador foi um projeto que participei entre 2021 e 2022, neste projeto abordamos temas 
+                        O programa "jovem programador" foi um projeto que participei entre 2021 e 2022 que visava capacitar jovens de baixa renda para ingressarem no mundo do desenvolvimento, neste projeto abordamos conteúdos 
                         como POO, criação de API's e uso de frameworks, durante este projeto houve um hackathon com todas a unidades do jovem programador, onde houveram
                         mais de 300 jovens participando, neste hackathon eu fiquei em 2° lugar e ganhei um alexa de 4° geração
                     </p>
+                    <p class="grade">
+                        <strong>Conteúdos:</strong>
+                    </p>
+                    <dl><h4>2021</h4>
+                        <dd> - Lógica de programação</dd>
+                        <dd> - POO</dd>
+                        </dl>
+                    <dl><h4>2022</h4>
+                        <dd> - desenvolvimento web(Django)</dd>
+                        <dd> - Hackathon</dd>
+                    </dl>
+                    </dl>
                 </div>
                 <div class="desc" id="ads">
+                    <h3>2023 - 2025</h3>
                     <p>
                         Atualmente estou curso análise e desenvolvimento de sistemas na unisul, comecei em 2023 e tenho data prevista para o término no primeiro semestre de 2025
                     </p>
+                    <p class="grade">
+                        <strong>Grade curricular:</strong> 
+                    </p>
+                    <dl><h4>2023.1</h4>
+                        <dd> - Modelagem de software</dd>
+                        <dd> - Programação de soluções computacionais</dd>
+                        <dd> -  Vida & carreira</dd>
+                    </dl>
+                    <dl><h4>2023.2</h4>
+                        <dd> - Ambientes computacionais e conectividade</dd>
+                        <dd> - Sistema computacionais e segurança</dd>
+                    </dl>
+                    <dl><h4>2024.1</h4>
+                        <dd> - Gestão e qualidade de software</dd>
+                        <dd> - Modelos, métodos e técnicas da engenharia de software</dd>
+                    </dl>
+                    <dl><h4>2024.2</h4>
+                        <dd> - Sistemas distribuídos e mobile</dd>
+                        <dd> - Usabilidade, desenvolvimento web, mobile e jogos</dd>
+                    </dl>
+                    <dl><h4>2025.1</h4>
+                        <dd> - Inovação, sustentabilidade e competitividade empresarial</dd>
+                        <dd> - Inteligência Artificial e Sociedade: soluções e desafios para o futuro</dd>
+                    </dl>
                 </div>
             </div>
         </div>
         
     </section>
+
+    <section class="aboutme" id="aboutme">
+     
+        <h2 class="top">Sobre</h2>
+        <h1 class="fm"><span class="form">Mim</span></h1>
+        
+        <div class="about">
+            <div class="imgabout">
+                <img src="foto port.jpg" alt="" class="PersonalFT">
+            </div>
+            <div class="textbox">
+                <div class="texto">
+                    <p class="about_description">
+                        Olá, meu nome é Matheus de Oliveira Soares, tenho 19 anos e sou um desenvolvedor full-stack, atualmente estou cursando análise e desenvolvimento de sistemas na Unisul.
+                        Atualmente trabalho escrevendo teste de caixa preta e automatizacao de testes. Estou em busca minha primeira oportunidade como desenvolvedor
+                    </p>
+                </div>
+                <div class="infos">
+                    <div class="infos_anos">
+                        <span class="infos_title">01+</span>
+                        <span class="infos_name">Anos de <br>experiência</span>
+                    </div>
+                    <div class="infos_projetos">
+                        <span class="infos_title">05+</span>
+                        <span class="infos_name">Projeto <br>completos</span>
+                    </div>
+                    <div>
+                        <span class="infos_title">01+</span>
+                        <span class="infos_name">Empresas que <br> passei</span>
+                    </div>
+                </div>            
+                <div class="cv">
+                    <a download="" href="assets/Meu Currículo.pdf" class="downloadCV">
+                        <strong><span class="textCV">
+                            Currículo <i class="fa-solid fa-download" name="DownloadIcon"></i>
+                        </span></strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
 
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script>
