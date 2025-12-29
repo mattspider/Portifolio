@@ -69,7 +69,7 @@ const About = () => {
             {/* CV Download */}
             <div className="flex justify-center pt-4">
               <a
-                href="/assets/CVC - Matheus de Oliveira Soares.pdf"
+                href={`${import.meta.env.BASE_URL}assets/CVC - Matheus de Oliveira Soares.pdf`}
                 download
                 className="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary to-secondary rounded-xl font-semibold text-white hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 hover:scale-105"
               >

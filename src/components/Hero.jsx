@@ -76,7 +76,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur-2xl opacity-50 animate-pulse"></div>
               <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl">
                 <img
-                  src="/sla.png"
+                  src={`${import.meta.env.BASE_URL}sla.png`}
                   alt="Matheus de Oliveira"
                   className="w-full h-full object-cover animate-float"
                 />
