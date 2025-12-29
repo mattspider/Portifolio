@@ -26,6 +26,44 @@ npm run build
 npm run preview
 ```
 
+## 🚀 Deploy no GitHub Pages
+
+O projeto está configurado para deploy automático no GitHub Pages usando GitHub Actions.
+
+### Configuração Automática (Recomendado)
+
+1. **Habilite o GitHub Pages no repositório:**
+   - Vá em Settings > Pages
+   - Em "Source", selecione "GitHub Actions"
+
+2. **Faça push das alterações:**
+   ```bash
+   git add .
+   git commit -m "Configure GitHub Pages"
+   git push origin main
+   ```
+
+3. **O workflow irá:**
+   - Fazer build do projeto automaticamente
+   - Fazer deploy para o GitHub Pages
+   - O site estará disponível em: `https://seu-usuario.github.io/Portifolio/`
+
+### Deploy Manual (Alternativa)
+
+Se preferir fazer deploy manual:
+
+```bash
+# 1. Fazer build
+npm run build
+
+# 2. Fazer commit da pasta dist
+git add dist
+git commit -m "Deploy"
+git subtree push --prefix dist origin gh-pages
+```
+
+**Nota:** Certifique-se de que o base path no `vite.config.js` está configurado como `/Portifolio/` (ou o nome do seu repositório).
+
 ## 🎨 Características
 
 - Design moderno e responsivo
